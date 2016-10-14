@@ -1,0 +1,60 @@
+
+html{
+	
+	width: 100%;
+}
+
+.bckBody {
+	background: url('../img/bckimg.png');
+	
+	width: auto;
+		background-repeat: no-repeat;
+}
+
+
+
+nav {
+	text-align: center;
+	
+}
+
+nav ul{
+				list-style: none;
+				margin-top:17%;
+				
+			}
+			
+nav ul li{
+				
+				margin: 1%;
+				display: inline;
+				text-align: center;
+			}
+			
+nav ul li a{
+	text-decoration: none;
+	border-left: 2px solid #eb17ad;
+	
+}			
+		
+	
+		
+.hotelCtrl  {
+	text-align: center;
+}
+
+.hotelCtrl  li{
+	text-align: center;
+	list-style: none;
+	margin:1.5%;
+	
+}
+
+	
+		
+			
+ ng-map{
+	margin: 0 auto;
+}
+
+

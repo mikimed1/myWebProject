@@ -1,0 +1,51 @@
+
+<html ng-app="app">
+  <head>
+  	<title>Viaggio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="custom-marker.css" rel="stylesheet" />
+    </head>
+    
+    <body class="bckBody">
+    	<nav>
+			<ul>
+				<li><a href="#home" >בית</a></li>
+				
+				<li ><a href="#map">  מפה  </a></li>
+				<li><a href="#hotels">  מלונות  </a></li>
+				<li><a href="#sites">  אתרים  </a></li>
+				<li><a href="#museums">  מוזיאונים  </a></li>
+				<li><a href="#rest">  מסעדות  </a></li>
+				<li><a href="#night">  חיי לילה  </a></li>
+			</ul>
+		</nav>
+<br>
+<br>
+<br>
+    	
+    	
+     	
+    	<div ng-controller="hotelsCtrl" class="hotelCtrl">
+    		<ul>
+    			<h2>Hotels</h2>
+    			<li ng-repeat="hotel in hotels">
+    				{{hotel.Name +' : '+ hotel.rating + ' : ' + hotel.address}}
+    			</li>
+    		</ul>
+    	</div>
+    
+    	<script src="js/angular.js"></script>
+    	<script src="js/angular-route.js"></script>
+    	 <script src="app/config.js"></script>
+    	 <script src="app/route.js"></script>
+    	 <script src="js/ng-map.min.js"></script>
+    	<script src="app/controllers/mapCtrl.js"></script>	
+    	<script src="app/controllers/hotelsCtrl.js"></script>
+    	 <!-- <script src="//googleapis.com/maps/api/js?sensor=false"></script>  -->
+    	 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa4clAWvykQs5Yx2QFmX7achWBJWnp2DA"></script>
+    	
+  </body>
+</html>
+
