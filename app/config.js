@@ -1,6 +1,6 @@
 
 (function(){
-angular.module('app', ['ngMap']);
+angular.module('app', ['ngMap', 'ngRoute']);
 
 
 })();

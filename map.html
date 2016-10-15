@@ -1,17 +1,7 @@
 
-<html ng-app="app">
-  <head>
-  	<title>Map</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="custom-marker.css" rel="stylesheet" />
-    </head>
-    
-    <body>
-    	<h1></h1>
     	
     		<div ng-controller="mapCtrl as vm" class="ngMap">
+    			<h2>Map</h2>
     	  <ng-map  style="height:500px; width:500px; display: block;" zoom="11" center="[32.80198, 34.99158]"
     		
     		zoom-to-include-markers="true">
@@ -23,14 +13,4 @@
     	
     	
     
-    	<script src="js/angular.js"></script>
-    	 <script src="app/config.js"></script>
-    	 <script src="js/ng-map.min.js"></script>
-    	<script src="app/controllers/mapCtrl.js"></script>	
-    	
-    	 <!-- <script src="//googleapis.com/maps/api/js?sensor=false"></script>  -->
-    	 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa4clAWvykQs5Yx2QFmX7achWBJWnp2DA"></script>
-    	
-  </body>
-</html>
 

@@ -1,0 +1,8 @@
+<div ng-controller="hotelsCtrl" class="hotelCtrl">
+    		<ul>
+    			<h2>Hotels</h2>
+    			<li ng-repeat="hotel in hotels">
+    				{{hotel.Name +' : '+ hotel.rating + ' : ' + hotel.address}}
+    			</li>
+    		</ul>
+    	</div>

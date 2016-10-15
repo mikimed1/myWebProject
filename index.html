@@ -5,10 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="custom-marker.css" rel="stylesheet" />
+    
     </head>
     
-    <body class="bckBody">
+   
+    	<body>
+    		 <div class="bckBody">
     	<nav>
 			<ul>
 				<li><a href="#home" >בית</a></li>
@@ -25,15 +27,8 @@
 <br>
 <br>
     	
-    	
+    	<ng-view></ng-view>
      	
-    	<div ng-controller="hotelsCtrl" class="hotelCtrl">
-    		<ul>
-    			<h2>Hotels</h2>
-    			<li ng-repeat="hotel in hotels">
-    				{{hotel.Name +' : '+ hotel.rating + ' : ' + hotel.address}}
-    			</li>
-    		</ul>
     	</div>
     
     	<script src="js/angular.js"></script>

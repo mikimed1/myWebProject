@@ -1,15 +1,12 @@
 
 html{
+	background: url('../img/bckimg.png')  ;
+	background-size: cover; 
 	
-	width: 100%;
+	
 }
 
-.bckBody {
-	background: url('../img/bckimg.png');
-	
-	width: auto;
-		background-repeat: no-repeat;
-}
+
 
 
 

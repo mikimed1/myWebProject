@@ -1,23 +1,24 @@
-//(function() {
+ (function() {
 	angular.module("app").config(route);
 
 	function route($routeProvider) {
 		$routeProvider.when('/hotels', {
-			templateUrl : 'app/views/hotels.html',
+			templateUrl : 'app/view/hotels.html',
+			controller : "hotelsCtrl"
 			//template:"<h1>this is about page</h1>"
 
-		}).when('/contactus', {
-			templateUrl : 'app/views/contactus.html',
-			controller : "contactUs"
+		}).when('/map', {
+			templateUrl : 'map.html',
+			controller : "mapCtrl"
 			//template:"<h1>this is about page</h1>"
 
-		}).when('/map/:name/:age', {
-			templateUrl : 'app/map.html',
-			controller : "map"
+	//	}).when('/map/:name/:age', {
+		//	templateUrl : 'app/map.html',
+		//	controller : "map"
 
-		}).when('/home', {
-			templateUrl : 'app/views/home.html',
-			controller : "home"
+	//	}).when('/home', {
+		//	templateUrl : 'app/views/home.html',
+		//	controller : "home"
 			//template:"<h1>this is about page</h1>"
 
 		}).otherwise({
@@ -26,4 +27,4 @@
 
 	}
 
-//})();
+})();
